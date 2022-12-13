@@ -1,0 +1,61 @@
+div#title {
+    
+}
+div#title .wrap {
+  height: 100%;
+}
+div#title .wrap h2 {  
+  font-size: 123px;
+  font-weight: 700;
+  margin-top: 190px;
+  color: #f8a112;
+  color: transparent;
+  color: #f8a112;
+}
+div#title .wrap h2::before{
+  content: "WEB";
+  -webkit-text-stroke: #f8a112 2px;
+  background-color: #1a2b49;
+  position: absolute;
+  color: transparent;
+  animation: left 5s alternate;
+  width: 268px;
+  animation-fill-mode: forwards;
+  animation-direction: revert;
+}
+@keyframes left{
+  0%{
+    width: 100%;
+    translate: revert;
+  }
+  100%{
+    width: 0%;
+  }
+}
+div#title .wrap h2 span{
+  color: white;
+  -webkit-text-stroke: #fff 2px;
+}
+div#title .wrap h2 span:nth-child(1)::before{
+  content: "DESIGNER";
+  -webkit-text-stroke: #fff 2px;
+  background-color: #1a2b49;
+  position: absolute;
+  color: transparent;
+  width: 630px;
+}
+div#title .wrap h2 span:nth-child(4){
+  color: #f8a112;
+  -webkit-text-stroke: #f8a112 2px;
+}
+div#title .wrap h2 span:nth-child(4)::before{
+  content: "&PUBLISHER";
+  -webkit-text-stroke: #f8a112 2px;
+  background-color: #1a2b49;
+  position: absolute;
+  color: transparent;
+  width: 800px;
+  animation: left 5s alternate;
+  width: 268px;
+  animation-fill-mode: forwards;
+}
